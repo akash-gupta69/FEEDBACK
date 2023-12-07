@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Feedback Survey</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<h1>Customer Feedback Survey</h1>
+
+<form action="/submit-feedback" method="post">
+  <ol>
+    <li>
+      <h3>Food Quality Assessment:</h3>
+      <label for="foodQuality">How would you rate the overall quality of the food? (Scale: 1-5)</label><br>
+      <input type="radio" id="foodQuality1" name="foodQuality" value="1">
+      <label for="foodQuality1">1 - Poor</label><br>
+      <input type="radio" id="foodQuality2" name="foodQuality" value="2">
+      <label for="foodQuality2">2 - Fair</label><br>
+      <input type="radio" id="foodQuality3" name="foodQuality" value="3">
+      <label for="foodQuality3">3 - Good</label><br>
+      <input type="radio" id="foodQuality4" name="foodQuality" value="4">
+      <label for="foodQuality4">4 - Very Good</label><br>
+      <input type="radio" id="foodQuality5" name="foodQuality" value="5">
+      <label for="foodQuality5">5 - Excellent</label><br>
+    </li>
+
+    <li>
+      <h3>Specific Dish Feedback:</h3>
+      <label for="specificDish">Which dish(es) did you order today?</label><br>
+      <input type="text" id="specificDish" name="specificDish"><br>
+      <label for="dishRating">How would you rate the taste and presentation of the dish(es)? (Scale: 1-5)</label><br>
+      <input type="radio" id="dishRating1" name="dishRating" value="1">
+      <label for="dishRating1">1 - Poor</label><br>
+      <input type="radio" id="dishRating2" name="dishRating" value="2">
+      <label for="dishRating2">2 - Fair</label><br>
+      <input type="radio" id="dishRating3" name="dishRating" value="3">
+      <label for="dishRating3">3 - Good</label><br>
+      <input type="radio" id="dishRating4" name="dishRating" value="4">
+      <label for="dishRating4">4 - Very Good</label><br>
+      <input type="radio" id="dishRating5" name="dishRating" value="5">
+      <label for="dishRating5">5 - Excellent</label><br>
+    </li>
+
+    <!-- Repeat similar structures for other questions (3 to 6) -->
+
+    <li>
+      <h3>Service Experience: </h3>
+      <label for="ServiceRating">How satisfied were you with the service provided?</label><br>
+      <input type="text" id="ServiceRating" name="ServiceRating"><br>
+
+      <input type="radio" id="ServieRating1" name="ServiceRating" value="1">
+      <label for="ServiceRating1">1 - Not Satisfied</label><br>
+      <input type="radio" id="ServiceRating2" name="ServiceRating" value="2">
+      <label for="ServiceRating2">2 - Somewhat Satisfied</label><br>
+      <input type="radio" id="dishRating3" name="ServiceRating" value="3">
+      <label for="ServiceRating3">3 - Neutral</label><br>
+      <input type="radio" id="dishRating4" name="dishRating" value="4">
+      <label for="ServiceRating4">4 - Satisfied</label><br>
+      <input type="radio" id="dishRating5" name="dishRating" value="5">
+      <label for="ServiceRating5">5 - Very Satisfied</label><br>
+
+    </li>
+    <li>
+      <h3>Atmosphere and Ambience:</h3>
+      <label for="Ambience">Did you find the atmosphere conducive to a pleasant dining experience?
+      (Yes/No)</label><br>
+ 
+      <input type="radio" id="AmbienceRating1" name="AmbienceRating" value="1">
+      <label for="AmbienceRating1">yes</label>
+      <input type="radio" id="AmbienceRating2" name="AmbienceRating" value="2">
+      <label for="AmbienceRating2">no</label><br>
+      <input type="radio" id="AmbienceRating1" name="AmbienceRating" value="1">
+      <label for="AmbienceRating1">1 - Star</label><br>
+      <input type="radio" id="AmbienceRating2" name="AmbienceRating" value="2">
+      <label for="AmbienceRating2">2 - Star</label><br>
+      <input type="radio" id="AmbienceRating3" name="AmbienceRating" value="3">
+      <label for="AmbienceRating3">3 - Star</label><br>
+      <input type="radio" id="AmbienceRating4" name="AmbienceRating" value="4">
+      <label for="AmbienceRating4">4 - Star</label><br>
+      <input type="radio" id="AmbienceRating5" name="AmbienceRating" value="5">
+      <label for="AmbienceRating5">5 - Star</label><br>
+    </li>
+
+    <li>
+      <h3>Overall Experience:</h3>
+      <label for="Experience">How likely are you to recommend our restaurant to friends or family? (Scale: 1-5)</label><br>
+
+      <input type="radio" id="ExperienceRating1" name="ExperienceRating" value="1">
+      <label for="ExperienceRating1">1 - Not Likely</label><br>
+      <input type="radio" id="ExperienceRating2" name="ExperienceRating" value="2">
+      <label for="ExperienceRating2">2 - Maybe</label><br>
+      <input type="radio" id="ExperienceRating3" name="ExperienceRating" value="3">
+      <label for="ExperienceRating3">3 - Neutral</label><br>
+      <input type="radio" id="ExperienceRating4" name="ExperienceRating" value="4">
+      <label for="ExperienceRating4">4 - Likely</label><br>
+      <input type="radio" id="ExperienceRating5" name="ExperienceRating" value="5">
+      <label for="ExperienceRating5">5 - Very Likely</label><br>  
+    </li>
+    <li>
+      <h3>Additional Comments:</h3>
+      <label for="additionalComments">Do you have any additional comments or suggestions that could help us enhance your dining experience?</label><br>
+      <textarea id="additionalComments" name="additionalComments" rows="4" cols="50"></textarea><br>
+    </li>
+  </ol>
+
+  
+  <button id="Submit"><a href="/thankyou.html" B style="text-decoration: none; color: black;">Submit</a></button>
+  
+  
+</form>
+</body>
+</html>
